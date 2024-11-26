@@ -1,0 +1,49 @@
+/* Footer Container */
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #6a11cb,
+    #2575fc
+  ); /* Gradient background */
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 600;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Stats Text Styling */
+.footer-text {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Styling for the "Start adding some tasks" message */
+.footer-text em {
+  color: #f39c12; /* Gold color for the message */
+  font-style: italic;
+}
+
+/* Hover effect for stats text */
+.footer-text:hover {
+  color: #f39c12;
+  cursor: pointer;
+}
+
+/* Add some responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 15px;
+  }
+
+  .footer-text {
+    font-size: 1.1em;
+  }
+}

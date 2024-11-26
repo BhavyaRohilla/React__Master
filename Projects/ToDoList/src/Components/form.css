@@ -1,0 +1,66 @@
+/* Horizontal Form Container */
+.task-form-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+/* Labels */
+.form-label-horizontal {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #555;
+  min-width: 90px;
+}
+
+/* Input Fields */
+.form-input-horizontal,
+.form-select-horizontal {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Button */
+.form-button-horizontal {
+  background: #2575fc;
+  color: #fff;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-button-horizontal:hover {
+  background: #6a11cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .task-form-horizontal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

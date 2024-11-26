@@ -1,0 +1,118 @@
+/* Task List Container Styling */
+.tasklist-container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the list horizontally */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Styling for the task list <ul> element */
+.tasklist-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for individual task items in the list */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #fff;
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for task items */
+.task-item:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox styling */
+.task-checkbox {
+  margin-right: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect for checkbox */
+.task-checkbox:hover {
+  transform: scale(1.2);
+}
+
+/* Task details container - horizontally aligned */
+.task-details {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Task name styling */
+.task-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  margin-right: 20px;
+  min-width: 150px;
+}
+
+/* Task description styling */
+.task-description {
+  font-size: 1em;
+  color: #666;
+  margin-right: 20px;
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+/* Due date styling */
+.task-due-date {
+  font-size: 0.9em;
+  color: #999;
+  margin-right: 20px;
+  min-width: 150px;
+}
+
+/* Priority styling */
+.task-priority {
+  font-size: 0.9em;
+  color: #007bff;
+  font-weight: bold;
+  margin-right: 20px;
+  min-width: 100px;
+}
+
+/* Delete button styling */
+.task-details button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1.2em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task-details button:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+.task-details button:active {
+  transform: scale(1);
+}
